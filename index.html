@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ne" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhydam Ridima Chhapakhana | Gajuri-1, Dhading</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pressDark: '#0b0f19',
+                        pressCard: '#131c2e',
+                        pressCyan: '#06b6d4',
+                        pressGold: '#f59e0b',
+                        pressBlue: '#2563eb'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .print-glow {
+            box-shadow: 0 0 30px -5px rgba(6, 182, 212, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-[#070a12] text-slate-100 font-sans antialiased selection:bg-pressCyan selection:text-slate-950">
+
+    <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center text-slate-950 shadow-lg shadow-cyan-500/20 font-bold">
+                        <i class="fa-solid fa-print text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-extrabold tracking-tight text-white">
+                            Rhydam Ridima <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-amber-400">Chhapakhana</span>
+                        </h1>
+                        <p class="text-xs text-slate-400 flex items-center space-x-1">
+                            <i class="fa-solid fa-location-dot text-cyan-400"></i>
+                            <span>गजुरी-१, धादिङ | WhatsApp / Phone: 98587777733</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-300 text-sm">
+                    <a href="#home" class="hover:text-cyan-400 transition-colors">गृहपृष्ठ (Home)</a>
+                    <a href="#services" class="hover:text-cyan-400 transition-colors">प्रिन्टिङ सेवाहरू (Services)</a>
+                    <a href="#orderbook" class="hover:text-cyan-400 transition-colors">अर्डर गर्नुहोस् (Order)</a>
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">हाम्रो बारेमा</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">सम्पर्क</a>
+                </nav>
+
+                <!-- Action Button (Direct WhatsApp Quick Inquiry) -->
+                <div class="flex items-center space-x-3">
+                    <a href="https://wa.me/97798587777733, 9860775533?text=नमस्ते,%20म%20Rhydam%20Ridima%20Chhapakhana%20बाट%20प्रिन्टिङ%20गर्न%20चाहन्छु।" target="_blank" class="hidden sm:inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-semibold text-sm shadow-lg shadow-emerald-600/20 transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp अर्डर</span>
+                    </a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2.5 rounded-xl bg-slate-800 text-slate-200 hover:bg-slate-700">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-pressDark border-b border-slate-800 px-4 pt-2 pb-5 space-y-3">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-cyan-400">गृहपृष्ठ (Home)</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400">प्रिन्टिङ सेवाहरू (Services)</a>
+            <a href="#orderbook" class="block py-2 text-slate-300 hover:text-cyan-400">अर्डर गर्नुहोस् (Order)</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400">हाम्रो बारेमा</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-cyan-400">सम्पर्क</a>
+            <div class="pt-2 flex flex-col space-y-2">
+                <a href="https://wa.me/97798587777733" class="w-full text-center bg-emerald-600 text-white py-3 rounded-xl font-medium">WhatsApp मा सम्पर्क</a>
+                <a href="tel:98587777733" class="w-full text-center bg-cyan-600 text-white py-3 rounded-xl font-medium">फोन कल गर्नुहोस्</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative overflow-hidden py-24 lg:py-32 bg-gradient-to-b from-pressDark via-[#0f172a] to-pressDark">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#06b6d4_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center space-x-2 bg-cyan-500/10 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-semibold border border-cyan-500/20">
+                        <i class="fa-solid fa-award"></i>
+                        <span>गजुरी-१, धादिङको अग्रणी डिजिटल प्रिन्टिङ प्रेस</span>
+                    </span>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Rhydam Ridima <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400">Chhapakhana</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                        तपाईंको व्यवसाय र व्यक्तिगत आवश्यकताका लागि उच्च गुणस्तरका भिजिटिङ कार्ड, फ्लेक्स ब्यानर, बिल बुक, लेटरहेड र सबै प्रकारका प्रिन्टिङ सेवाहरू सहजै उपलब्ध छन्।
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#orderbook" class="inline-flex justify-center items-center space-x-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold px-8 py-4 rounded-2xl shadow-xl shadow-cyan-500/20 hover:opacity-95 transition-all">
+                            <span>डिजाइन अपलोड र अर्डर</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="inline-flex justify-center items-center space-x-3 bg-slate-800/80 hover:bg-slate-800 text-white font-semibold px-8 py-4 rounded-2xl border border-slate-700 transition-all">
+                            <span>सेवाहरू हेर्नुहोस्</span>
+                        </a>
+                    </div>
+                    <!-- Contact Numbers Box -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 max-w-lg mx-auto lg:mx-0">
+                        <a href="tel:98587777733" class="bg-pressCard/80 border border-slate-800 hover:border-cyan-500/50 p-4 rounded-2xl flex items-center space-x-3 transition-all">
+                            <div class="w-10 h-10 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">सम्पर्क / WhatsApp</span>
+                                <span class="text-sm font-bold text-white font-mono">9860775533</span>
+                            </div>
+                        </a>
+                        <a href="tel:9858777733" class="bg-pressCard/80 border border-slate-800 hover:border-amber-500/50 p-4 rounded-2xl flex items-center space-x-3 transition-all">
+                            <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">सम्पर्क / WhatsApp</span>
+                                <span class="text-sm font-bold text-white font-mono">9858777733</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic Mockup -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-md bg-gradient-to-br from-[#131c2e] to-[#0f172a] border border-cyan-500/30 rounded-3xl p-6 print-glow space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-cyan-500/20 text-cyan-400 rounded-xl flex items-center justify-center">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">प्रिमियम प्रिन्टिङ ग्यारेन्टी</h3>
+                                    <p class="text-xs text-slate-400">गजुरी-१, धादिङ</p>
+                                </div>
+                            </div>
+                            <span class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/20">खुला छ</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 flex justify-between text-sm">
+                                <span class="text-slate-400">भिजिटिङ कार्ड / आईडी कार्ड</span>
+                                <span class="text-cyan-400 font-medium">उपलब्ध</span>
+                            </div>
+                            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 flex justify-between text-sm">
+                                <span class="text-slate-400">फ्लेक्स तथा ब्यानर प्रिन्ट</span>
+                                <span class="text-cyan-400 font-medium">उपलब्ध</span>
+                            </div>
+                            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 flex justify-between text-sm">
+                                <span class="text-slate-400">बिल बुक र लेटरहेड</span>
+                                <span class="text-cyan-400 font-medium">उपलब्ध</span>
+                            </div>
+                            <div class="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 flex justify-between text-sm">
+                                <span class="text-slate-400">रबर स्टाम्प र बाइंडिङ</span>
+                                <span class="text-cyan-400 font-medium">उपलब्ध</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/97798587777733?text=नमस्ते,%20म%20प्रिन्टिङ%20बारे%20बुझ्न%20चाहन्छु।" target="_blank" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:opacity-95 text-white font-semibold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/20 transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>WhatsApp मा सिधै कुरा गर्नुहोस्</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-[#090d16] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold">हाम्रो विशेषता</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">प्रिन्टिङ सेवा तथा स्पेसिफिकेशनहरू</h2>
+                <p class="text-slate-400">कुनै पनि मूल्य वा डेलिभरी बिना, आफ्नो आवश्यकता अनुसारको स्पेसिफिकेशन छानेर सिधै हामीलाई WhatsApp वा फोनबाट अर्डर बुझائ सक्नुहुन्छ।</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-pressCard border border-slate-800/80 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-cyan-500/10 text-cyan-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">बिजनेस कार्ड (Business Card)</h3>
+                        <p class="text-slate-400 text-sm mb-6">व्यावसायिक परिचयको लागि म्याट फिनिश, ग्लसी ल्यामिनेसन, र प्रिमियम थिक पेपर विकल्पहरू।</p>
+                        <div class="space-y-2 mb-6 bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">उपलब्ध साइज:</span>
+                                <span class="font-semibold">Standard (3.5" x 2")</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">पेपर क्वालिटी:</span>
+                                <span class="font-semibold">300 GSM Art Paper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="selectServiceForOrder('Business Card')" class="w-full bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-white font-semibold py-3 rounded-xl transition-all text-sm">
+                        यो सेवा छान्नुहोस्
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-pressCard border border-slate-800/80 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">फ्लेक्स तथा ब्यानर (Flex & Banner)</h3>
+                        <p class="text-slate-400 text-sm mb-6">पसल साइनबोर्ड, कार्यक्रमको ब्यानर, र विज्ञापनको लागि उच्च क्वालिटीको फ्लेक्स प्रिन्ट।</p>
+                        <div class="space-y-2 mb-6 bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">साइज विकल्प:</span>
+                                <span class="font-semibold">Custom Size (वर्ग फिट अनुसार)</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">म्याटेरियल:</span>
+                                <span class="font-semibold">Star Flex / Normal Flex</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="selectServiceForOrder('Flex & Banner')" class="w-full bg-slate-800 hover:bg-blue-600 text-white font-semibold py-3 rounded-xl transition-all text-sm">
+                        यो सेवा छान्नुहोस्
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-pressCard border border-slate-800/80 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">बिल बुक र लेटरहेड (Billbook & Letterhead)</h3>
+                        <p class="text-slate-400 text-sm mb-6">कम्पनीको हिसाबकिताब र आधिकारिक पत्रचारको लागि कार्बनलेस बिल बुक र लेटरहेड।</p>
+                        <div class="space-y-2 mb-6 bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">कपी प्रकार:</span>
+                                <span class="font-semibold">Single / Duplicate / Triplicate</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">पेज संख्या:</span>
+                                <span class="font-semibold">100 Pages Pad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="selectServiceForOrder('Billbook & Letterhead')" class="w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-semibold py-3 rounded-xl transition-all text-sm">
+                        यो सेवा छान्नुहोस्
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-pressCard border border-slate-800/80 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-purple-500/10 text-purple-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-stamp"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">रबर स्टाम्प (Rubber Stamp)</h3>
+                        <p class="text-slate-400 text-sm mb-6">कम्पनीको सही, नाम र विवरणको लागि प्रि-इन्क्ड र सेल्फ-इन्क्ड रबर स्टाम्पहरू।</p>
+                        <div class="space-y-2 mb-6 bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">आकार:</span>
+                                <span class="font-semibold">Rectangular / Round / Square</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">इन्क रङ:</span>
+                                <span class="font-semibold">Blue / Red / Black</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="selectServiceForOrder('Rubber Stamp')" class="w-full bg-slate-800 hover:bg-purple-600 text-white font-semibold py-3 rounded-xl transition-all text-sm">
+                        यो सेवा छान्नुहोस्
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-pressCard border border-slate-800/80 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-pink-500/10 text-pink-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">फ्लायर र ब्रोसर (Flyer & Brochure)</h3>
+                        <p class="text-slate-400 text-sm mb-6">व्यापार प्रवर्द्धन र कार्यक्रमको विज्ञापनको लागि रंगीन पम्प्लेट तथा फोल्डिङ ब्रोसरहरू।</p>
+                        <div class="space-y-2 mb-6 bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">साइज:</span>
+                                <span class="font-semibold">A4 / A5 Glossy Paper</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">प्रिन्ट:</span>
+                                <span class="font-semibold">Both side full color</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="selectServiceForOrder('Flyer & Brochure')" class="w-full bg-slate-800 hover:bg-pink-600 text-white font-semibold py-3 rounded-xl transition-all text-sm">
+                        यो सेवा छान्नुहोस्
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-pressCard border border-slate-800/80 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-colors">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">बुक बाइंडिङ (Book Binding)</h3>
+                        <p class="text-slate-400 text-sm mb-6">थीसिस, रिपोर्ट, रजिस्टर तथा किताबहरूको लागि हार्ड कभर र स्पाइरल बाइंडिङ सेवा।</p>
+                        <div class="space-y-2 mb-6 bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">प्रकार:</span>
+                                <span class="font-semibold">Hard Cover / Spiral / Soft Binding</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span class="text-slate-400">फिनिसिङ:</span>
+                                <span class="font-semibold">Golden Foil / Standard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="selectServiceForOrder('Book Binding')" class="w-full bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-semibold py-3 rounded-xl transition-all text-sm">
+                        यो सेवा छान्नुहोस्
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orderbook" class="py-24 bg-[#070a12] border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-pressCard border border-slate-800 rounded-3xl p-6 sm:p-12 shadow-2xl space-y-8">
+                <div class="text-center space-y-3">
+                    <span class="bg-cyan-500/10 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-semibold border border-cyan-500/20">डायरेक्ट अर्डर बुकिङ</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">डिजाइन अपलोड गर्नुहोस् र WhatsApp / फोनमार्फत अर्डर गर्नुहोस्</h2>
+                    <p class="text-sm text-slate-400">तपाईंको प्रिन्टिङ फाइल (PDF, CDR, Image) यहाँ जोड्नुहोस् र विवरण भरी सिधै हामीलाई पठाउनुहोस्।</p>
+                </div>
+
+                <form id="directOrderForm" onsubmit="submitDirectOrder(event)" class="space-y-6">
+                    <!-- Service Selection -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">सेवा छानेको (Select Service) *</label>
+                        <select id="orderService" class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-500 font-medium text-sm">
+                            <option value="Business Card">बिजनेस कार्ड (Business Card)</option>
+                            <option value="Flex & Banner">फ्लेक्स तथा ब्यानर (Flex & Banner)</option>
+                            <option value="Billbook & Letterhead">बिल बुक र लेटरहेड (Billbook & Letterhead)</option>
+                            <option value="Rubber Stamp">रबर स्टाम्प (Rubber Stamp)</option>
+                            <option value="Flyer & Brochure">फ्लायर र ब्रोसर (Flyer & Brochure)</option>
+                            <option value="Book Binding">बुक बाइंडिङ (Book Binding)</option>
+                            <option value="Other Printing Work">अन्य प्रिन्टिङ कार्य (Other)</option>
+                        </select>
+                    </div>
+
+                    <!-- Specification & Quantity -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">साइज वा स्पेसिफिकेशन (Size / Quality)</label>
+                            <input type="text" id="orderSpec" placeholder="जस्तै: Standard size, 300 GSM, 3x4 feet आदि" class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">मात्रा / संख्या (Quantity) *</label>
+                            <input type="text" id="orderQty" required placeholder="जस्तै: 100 पिस, 2 वटा बिल बुक आदि" class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-500 text-sm">
+                        </div>
+                    </div>
+
+                    <!-- File Upload Simulation -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-semibold text-slate-300">डिजाइन वा कागजात फाइल (Upload Design File)</label>
+                        <div class="border-2 border-dashed border-slate-800 rounded-2xl p-6 text-center hover:border-cyan-500/50 transition-all cursor-pointer bg-slate-900/40" onclick="document.getElementById('designFile').click()">
+                            <input type="file" id="designFile" class="hidden" onchange="handleFileUpload(event)">
+                            <div id="uploadPrompt" class="space-y-2">
+                                <i class="fa-solid fa-cloud-arrow-up text-3xl text-cyan-400"></i>
+                                <p class="text-sm font-medium text-slate-300">फाइल अपलोड गर्न यहाँ क्लिक गर्नुहोस् (CDR, PDF, PNG, JPG)</p>
+                                <p class="text-xs text-slate-500">यदि डिजाइन छैन भने तल नोटमा लेख्न सक्नुहुन्छ</p>
+                            </div>
+                            <div id="uploadSuccess" class="hidden space-y-1 text-emerald-400">
+                                <i class="fa-solid fa-circle-check text-2xl"></i>
+                                <p id="uploadedFileName" class="text-sm font-bold"></p>
+                                <p class="text-xs text-slate-400">फाइल सफलतापूर्व जोडिएको छ!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">तपाईंको पूरा नाम *</label>
+                            <input type="text" id="clientName" required placeholder="नाम लेख्नुहोस्" class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">सम्पर्क फोन नम्बर *</label>
+                            <input type="tel" id="clientPhone" required placeholder="98XXXXXXXX" class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-500 text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">थप विवरण / डिजाइन नोट (Special Instructions)</label>
+                        <textarea id="clientNotes" rows="3" placeholder="जस्तै: डिजाइन म पठाउँछु वा प्रेसले नै डिजाइन गरिदिनुपर्ने आदि..." class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-500 text-sm"></textarea>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-2xl flex items-center justify-center space-x-2 shadow-xl shadow-emerald-600/20 transition-all text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp मा अर्डर पठाउनुहोस्</span>
+                        </button>
+                        <button type="button" onclick="callPressDirect()" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 rounded-2xl flex items-center justify-center space-x-2 shadow-xl shadow-cyan-600/20 transition-all text-base">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                            <span>सिधै फोन कल गर्नुहोस्</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-[#090d16] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="bg-cyan-500/10 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-semibold border border-cyan-500/20">हाम्रो परिचय</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Rhydam Ridima Chhapakhana <br>गजुरी-१, धादिङ
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        हामी गजुरी, धादिङबाट गुणस्तरीय प्रिन्टिङ सेवा प्रदान गर्दै आएका एक भरपर्दो प्रेस हब हौं। आधुनिक डिजिटल प्रिन्टिङ प्रविधि र उत्कृष्ट सामग्री प्रयोग गरी ग्राहकहरूको आवश्यकता अनुसारको काम समयमै उपलब्ध गराउँदै आएका छौं।
+                    </p>
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <div class="w-6 h-6 bg-cyan-500/20 text-cyan-400 rounded-full flex items-center justify-center text-xs font-bold">✓</div>
+                            <span>अत्याधुनिक प्रिन्टिङ तथा डिजाइन सुविधा</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <div class="w-6 h-6 bg-cyan-500/20 text-cyan-400 rounded-full flex items-center justify-center text-xs font-bold">✓</div>
+                            <span>सुलभ दररेटमा उच्च गुणस्तरको काम</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <div class="w-6 h-6 bg-cyan-500/20 text-cyan-400 rounded-full flex items-center justify-center text-xs font-bold">✓</div>
+                            <span>WhatsApp तथा फोनमार्फत सजिलो अर्डरिङ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact" class="lg:col-span-6 bg-pressCard border border-slate-800 rounded-3xl p-8 space-y-6 shadow-xl">
+                    <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-4">सम्पर्क विवरण (Contact Info)</h3>
+                    <div class="space-y-6 text-sm">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 rounded-2xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">ठेगाना (Location)</h4>
+                                <p class="text-slate-400">गजुरी-१, धादिङ, नेपाल</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">WhatsApp / फोन नम्बरहरू (दुनटैमा उपलब्ध)</h4>
+                                <p class="text-cyan-400 font-mono font-bold text-base">98587777733 & 9860775533</p>
+                                <p class="text-xs text-slate-400">फोन कल वा ह्वाट्सएप सन्देशको लागि एउटै नम्बर प्रयोग गर्नुहोस्।</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">खुल्ने समय</h4>
+                                <p class="text-slate-400">आइतबार - शनिबार: बिहान ९:०० देखि बेलुका ७:०० बजेसम्म</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 flex space-x-4">
+                        <a href="https://wa.me/97798587777733" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white text-center py-3 rounded-xl font-semibold text-sm transition-all">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> ह्वाट्सएप च्याट
+                        </a>
+                        <a href="tel:98587777733" class="flex-1 bg-cyan-600 hover:bg-cyan-500 text-white text-center py-3 rounded-xl font-semibold text-sm transition-all">
+                            <i class="fa-solid fa-phone mr-1"></i> कल गर्नुहोस्
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#05080f] text-slate-500 py-10 border-t border-slate-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p>&copy; 2026 Rhydam Ridima Chhapakhana (Gajuri-1, Dhading). All rights reserved.</p>
+            <div class="flex space-x-6 text-lg text-slate-400">
+                <a href="tel:98587777733" class="hover:text-cyan-400 transition-colors" title="Call 98587777733"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/97798587777733" target="_blank" class="hover:text-emerald-400 transition-colors" title="WhatsApp 98587777733"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/9779860775533" target="_blank" class="hover:text-emerald-400 transition-colors" title="WhatsApp 9860775533"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/97798587777733?text=नमस्ते,%20म%20प्रिन्टिङ%20सेवाको%20बारेमा%20बुझ्न%20चाहन्छु।" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl transition-all transform hover:scale-105" title="WhatsApp Chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Select Service from Card
+        function selectServiceForOrder(serviceName) {
+            const selectEl = document.getElementById('orderService');
+            for(let i=0; i<selectEl.options.length; i++) {
+                if(selectEl.options[i].value === serviceName) {
+                    selectEl.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('orderbook').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // File upload simulation
+        let uploadedFileNameText = "";
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if(file) {
+                uploadedFileNameText = file.name;
+                document.getElementById('uploadPrompt').classList.add('hidden');
+                document.getElementById('uploadSuccess').classList.remove('hidden');
+                document.getElementById('uploadedFileName').textContent = file.name;
+            }
+        }
+
+        // Submit Direct Order via WhatsApp
+        function submitDirectOrder(event) {
+            event.preventDefault();
+            const service = document.getElementById('orderService').value;
+            const spec = document.getElementById('orderSpec').value || 'निर्दिष्ट गरिएको छैन';
+            const qty = document.getElementById('orderQty').value;
+            const name = document.getElementById('clientName').value;
+            const phone = document.getElementById('clientPhone').value;
+            const notes = document.getElementById('clientNotes').value || 'कुनै नोट छैन';
+
+            let msg = `*नयाँ प्रिन्टिङ अर्डर / सोधपुछ* (Rhydam Ridima Chhapakhana)\n\n`;
+            msg += `📌 *सेवा:* ${service}\n`;
+            msg += `⚙️ *स्पेसिफिकेशन:* ${spec}\n`;
+            msg += `📦 *मात्रा:* ${qty}\n`;
+            if(uploadedFileNameText) {
+                msg += `📁 *अपलोड फाइल:* ${uploadedFileNameText} (डाइरेक्ट फाइल जोडिएको छ)\n`;
+            }
+            msg += `👤 *नाम:* ${name}\n`;
+            msg += `📞 *फोन:* ${phone}\n`;
+            msg += `📝 *नोट:* ${notes}\n`;
+
+            const encodedMsg = encodeURIComponent(msg);
+            const whatsappUrl = `https://wa.me/97798587777733?text=${encodedMsg}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Direct Call Press
+        function callPressDirect() {
+            window.location.href = "tel:98587777733";
+        }
+    </script>
+</body>
+</html>
